@@ -1,0 +1,38 @@
+{
+  "name": "nike",
+  "description": "nike local opening",
+  "main": "index.js",
+  "authors": [
+    "Inti Mateo"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Inti",
+    "Mateo",
+    "Wordpress",
+    "template"
+  ],
+  "homepage": "https://github.com/intimateo/nike",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "~1.4.9",
+    "angular-sanitize": "~1.4.9",
+    "angular-ui-router-anim-in-out": "~1.0.2",
+    "angular": "~1.4.9",
+    "avalanche-css": "~1.0.1",
+    "hover": "Hover#^2.0.2",
+    "jquery": "^3.1.0",
+    "ng-parallax": "^0.1.8",
+    "ng-simple-parallax": "*",
+    "sassline": "^2.1.2",
+    "textillate": "jschr/textillate#^0.4.0",
+    "waypoints": "^4.0.0"
+  }
+}

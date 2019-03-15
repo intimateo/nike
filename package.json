@@ -1,0 +1,51 @@
+{
+  "name": "intimateo",
+  "version": "1.0.0",
+  "description": "Inti Mateo portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intimateo/nike.git"
+  },
+  "keywords": [
+    "Inti",
+    "Mateo",
+    "Wordpress",
+    "template"
+  ],
+  "author": "Inti Mateo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/intimateo/nike/issues"
+  },
+  "homepage": "https://github.com/intimateo/nike#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cache": "^0.4.1",
+    "gulp-combine-media-queries": "^0.2.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-filter": "^3.0.1",
+    "gulp-ignore": "^2.0.1",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-newer": "^1.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-rimraf": "^0.2.0",
+    "gulp-run-sequence": "^0.3.2",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.1",
+    "gulp-uglifycss": "^1.0.5",
+    "gulp-zip": "^3.1.0"
+  },
+  "dependencies": {
+    "bower": "^1.8.8"
+  }
+}

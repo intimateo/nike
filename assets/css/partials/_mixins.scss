@@ -1,0 +1,52 @@
+@mixin font-size($sizeValue: 12 ){
+  font-size: $sizeValue + px; //fallback for old browsers
+  font-size: (0.125 * $sizeValue) + rem;
+}
+@mixin line-height($heightValue: 12 ){
+    line-height: $heightValue + px; //fallback for old browsers
+    line-height: (0.125 * $heightValue) + rem;
+}
+
+
+@mixin margin-padding($spacing:5) {
+  @for $i from 1 to 11 {
+     // Margin
+     .margin-#{$i}x { margin: $spacing * $i; }
+    
+     .margin-top-#{$i}x, 
+     .margin-vertical-#{$i}x { margin-top: ($spacing * $i) + px; }
+    
+     .margin-bottom-#{$i}x,
+     .margin-vertical-#{$i}x { margin-bottom: ($spacing * $i) + px; }
+    
+     .margin-left-#{$i}x,
+     .margin-horizontal-#{$i}x { margin-left: ($spacing * $i) + px; }
+    
+     .margin-right-#{$i}x,
+     .margin-horizontal-#{$i}x { margin-right: ($spacing * $i) + px; }
+    
+     // Padding
+     .padding-#{$i}x { padding: ($spacing * $i) + px; }
+    
+     .padding-top-#{$i}x,
+     .padding-vertical-#{$i}x { padding-top: ($spacing * $i) + px; }
+    
+     .padding-bottom-#{$i}x,
+     .padding-vertical-#{$i}x{ padding-bottom: ($spacing * $i) + px; }
+    
+     .padding-left-#{$i}x,
+     .padding-horizontal-#{$i}x { padding-left: ($spacing * $i) + px; }
+    
+     .padding-right-#{$i}x,
+     .padding-horizontal-#{$i}x{ padding-right: ($spacing * $i) + px; }
+    }
+}
+
+@include margin-padding()
+
+
+
+
+
+
+

@@ -1,0 +1,107 @@
+///
+//FrontEnd by: Inti Mateo www.imateo.com
+//
+
+@font-face {
+    font-family: Futura Nike;
+    src: url(assets/fonts/NFUNCXBD_01.eot);
+    src: url(assets/fonts/NFUNCXBD_01.eot?#iefix)format("embedded-opentype"), url(assets/fonts/NFUNCXBD_01.ttf)format("truetype");
+    font-weight: lighter;
+    font-style: normal;
+}
+@font-face {
+    font-family: Trade Gothic Bold;
+    src: url(assets/fonts/TradeGothicLTStd-BdCn20.eot);
+    src: url(assets/fonts/TradeGothicLTStd-BdCn20.eot?#iefix)format("embedded-opentype"), url(assets/fonts/TradeGothicLTStd-BdCn20.ttf)format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: Trade Gothic Cond;
+    src: url(assets/fonts/TradeGothicLTStd-Cn18.eot);
+    src: url(assets/fonts/TradeGothicLTStd-Cn18.eot?#iefix)format("embedded-opentype"), url(assets/fonts/TradeGothicLTStd-Cn18.ttf)format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+$brand-color: #00E7FF;
+$dark-color: #393E41;
+$title-font: 'Futura Nike';
+$regular-font: 'Trade Gothic Bold';
+$text-font: 'Trade Gothic Cond';
+
+@import 'partials/mixins';
+@import 'vendor/normalize';
+@include normalize();
+@import 'vendor/avalanche';
+@import 'partials/home';
+@import 'partials/animate';
+
+
+body{
+	background-color:#000;
+	font-family:$regular-font;
+}
+.wrapper{
+    max-width: 1020px;
+    padding: 0 10px 35px 10px;
+    margin: 0 auto;
+    position: relative;
+    z-index:2;
+}
+p{
+	display:inline-block;
+}
+.sandbox{
+	padding:20px;
+	&__centered{
+		max-width: 1020px;
+		margin: 0 auto;
+	}
+}
+a{
+	text-decoration:none;
+}
+.text-shadow{
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.45);
+}
+svg{
+	&.line-drawing{
+		path {
+			transform:scale(1.2);
+			fill: none;
+			stroke-width: 2;
+			stroke: #000;
+		}
+		&.active{
+			path{
+				fill: #000;
+				stroke-width:0;
+			}
+		}
+	}
+}
+.text-centered{
+	text-align:center !important;
+}
+.text-left{
+	text-align:left;
+}
+div{
+	box-sizing: border-box;
+}
+.white{
+	color:#fff;
+}
+.brand-color{
+	color:$brand-color;
+}
+.left{
+	float:left;
+}
+.text-font{
+	font-family:$text-font;
+}
